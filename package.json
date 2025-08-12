@@ -1,0 +1,60 @@
+{
+  "name": "ideagobackend",
+  "version": "1.0.0",
+  "description": "a backend service for ideago furnitures by vansh gupta",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node --es-module-specifier-resolution=node dist/index.js",
+    "render-start": "NODE_OPTIONS='--max-old-space-size=4096' npm run build && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanshguptaji/ideagoBackend.git"
+  },
+  "author": "Vansh Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanshguptaji/ideagoBackend/issues"
+  },
+  "homepage": "https://github.com/vanshguptaji/ideagoBackend#readme",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "bcrypt": "^5.1.1",
+    "cloudinary": "^1.41.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-fileupload": "^1.5.2",
+    "google-auth-library": "^9.15.1",
+    "http": "^0.0.1-security",
+    "ioredis": "^5.6.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.17.1",
+    "multer": "^1.4.5-lts.2",
+    "multer-storage-cloudinary": "^4.0.0",
+    "nodemailer": "^6.10.1",
+    "nodemon": "^3.1.10",
+    "resend": "^4.4.1",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.3",
+    "@types/express-fileupload": "^1.5.1",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/mongoose": "^5.11.96",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^24.2.1",
+    "@types/nodemailer": "^6.4.17",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
