@@ -9,7 +9,7 @@
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
     "start": "node --es-module-specifier-resolution=node dist/index.js",
-    "render-start": "NODE_OPTIONS='--max-old-space-size=4096' npm run build && npm run start"
+    "render-start": "npm run build && npm run start"
   },
   "repository": {
     "type": "git",
